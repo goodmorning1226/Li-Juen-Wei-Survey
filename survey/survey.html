@@ -1,0 +1,90 @@
+<!DOCTYPE html />
+<html lang="en">
+    <head>
+        <title>li-juen-wei-survey</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="survey.css">
+    </head>
+    <body>
+        <h1 id="title">Li-Juen-Wei-Survey</h1>
+        <p id="description">Confess to Li-Juen-We!</p>
+        <form id="survey-form" action="https://formsubmit.co/allensung.taiwan@gmail.com" method="post">
+            <fieldset>
+                <legend>Fill in your info</legend>
+                <label id="name-label" for="name">
+                    What's ur name? <input id="name" name="name" type="text" placeholder="ex. Li-Juen-Wei" required />
+                </label>
+                <label id="number-label" for="number">
+                    What's ur age? <input id="number" name="age" type="number" min="7" max="300" placeholder="ex. 30" required />
+                </label>
+                <label id="email-label" for="email">
+                    What's your email? <input id="email" name="email" type="email" placeholder="ex. LiJuenWei@gmail.com" required />
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>What do u know about Li-Juen-Wei</legend>
+                <p>How many times does Li-Juen-Wei defecate a day?</p>
+                <label for="p1">
+                    <input id="p1" name="poop" type="radio" value="1" checked />
+                    Once a day
+                </label>
+                <label for="p2">
+                    <input id="p2" name="poop" type="radio" value="2" />
+                    Twice a day
+                </label>
+                <label for="p3">
+                    <input id="p3" name="poop" type="radio" value="3" />
+                    Three times a day
+                </label>
+                <label for="pI">
+                    <input id="pI" name="poop" type="radio" value="infinite" />
+                    Infinite times a day
+                </label>
+                <p>What are the advantages of Li-Juen-Wei? (mutiple choice)</p>
+                <label for="black">
+                    <input id="black" name="advantages" type="checkbox" value="black" />
+                    Hes black
+                </label>
+                <label for="poopmany">
+                    <input id="poopmany" name="advantages" type="checkbox" value="poopmany" />
+                    Being able to poop many times a day
+                </label>
+                <label for="ball">
+                    <input id="ball" name="advantages" type="checkbox" value="ball" />
+                    He can transform into  a ball
+                </label>
+                <label for="bellybig">
+                    <input id="bellybig" name="advantages" type="checkbox" value="bellybig" />
+                    Belly is so big that can be used as a drum
+                </label>
+                <label for="study">
+                    <input id="study" name="advantages" type="checkbox" value="study" />
+                    Studies for 20 hours a day (4 hours pooping), so he got a good score at phen-ke
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>To Li-Juen-Wei</legend>
+                <label for="dropdown">
+                    How did you know about Li-Juen-Wei?
+                    <select id="dropdown" name="how-know">
+                        <option value="">(select one of the options)</option>
+                        <option value="hsnu">From HSNU</option>
+                        <option value="kfc">From KFC</option>
+                        <option value="toilet">From skibidi toilet</option>
+                        <option value="phen-ke">From phen-ke</option>
+                    </select>
+                </label>
+                <label>
+                    Some words for Li-Juen-Wei:
+                    <textarea id="words" name="words" placeholder="I like Li-Juen-Wei..."></textarea>
+                </label>
+            </fieldset>
+            <label for="agree">
+                <input id="agree" name="agree" type="checkbox" value="agree" required />
+                I agree to provide these information to Li-Juen-Wei
+            </label>
+            <input id="submit" name="submit" type="submit" />
+        </form>
+    </body>
+</html>
